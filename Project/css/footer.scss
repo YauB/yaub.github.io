@@ -1,0 +1,5 @@
+footer{
+    @include center-content;
+    color: $footer-color;
+    border-top: 1px dotted $footer-color;
+  }

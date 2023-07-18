@@ -1,0 +1,138 @@
+header {
+  background-color: #110f0f;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  color: #9bbb0d;
+  line-height: 45px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  color: #9bbb0d;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #e63946;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#word-container {
+  margin-bottom: 20px;
+}
+#word-container #hint {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #045658;
+}
+#word-container #word {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+#guess-container {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+#guess-container input[type=text] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #045658;
+  border-radius: 4px;
+  outline: none;
+  color: #9bbb0d;
+  background-color: #e0e0e0;
+}
+#guess-container input[type=text]:focus {
+  border-color: #e63946;
+}
+#guess-container button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #e0e0e0;
+  background-color: #e63946;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#guess-container button:disabled {
+  background-color: #f1faee;
+  cursor: not-allowed;
+}
+
+#hangman-container {
+  margin-bottom: 20px;
+}
+#hangman-container img {
+  max-width: 100%;
+  box-shadow: 5px 5px 10px #5d5d5d;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+#result-container {
+  flex-direction: column;
+}
+#result-container #result {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#result-container #play-again-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #e0e0e0;
+  display: none;
+  background-color: #045658;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#result-container #play-again-button:hover {
+  background-color: #022627;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-top: 1px dotted black;
+}

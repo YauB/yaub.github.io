@@ -1,0 +1,26 @@
+header {
+	background-color: #110f0f;
+	padding: 20px;
+}
+
+nav {
+  ul {
+    list-style: none;
+    @include center-content;
+  }
+  li {
+    margin: 0 10px;
+  }
+  a{
+    color: $text-color;
+    line-height: 45px;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    background-color: rgba(255,255,255, 0.3);
+    text-decoration: underline;
+  }
+}

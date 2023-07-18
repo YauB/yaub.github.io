@@ -1,0 +1,113 @@
+// Global Styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $wrapper_color;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+// Hangman Game Styles
+#word-container {
+    margin-bottom: 20px;
+
+  #hint {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $accent-color;
+  }
+
+  #word {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+}
+
+#guess-container {
+  max-width: 300px;
+  margin-bottom: 20px;
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: $standard-font-size;
+    border: 2px solid $accent-color;
+    border-radius: 4px;
+    outline: none;
+    color: $text-color;
+    background-color: $background-color;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: $standard-font-size;
+    color: $background-color;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: $secondary-color;
+      cursor: not-allowed;
+    }
+  }
+}
+
+#hangman-container {
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    @include rounded-shaded-box(5px, 5px, 5px, black);
+  }
+}
+
+#result-container {
+  flex-direction: column;
+
+  #result {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #play-again-button {
+    padding: 10px 20px;
+    font-size: $standard-font-size;
+    color: $background-color;
+    display: none;
+    background-color: $accent-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
